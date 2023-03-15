@@ -62,16 +62,7 @@ export default function Home() {
           This is my animated element.
         </motion.div>
         <div className='container mx-96'>
-          <motion.ul
-            className="container"
-            variants={motionEffect}
-            initial="hidden"
-            animate="visible"
-          >
-            {[0, 1, 2, 3].map((index) => (
-              <motion.li key={index} variants={item} className="bg-green-700 text-white p-2 w-[200px] text-center my-2 hover:bg-green-900 hover:transition-all cursor-pointer rounded-md" onClick={writeData} >Send Data 🚀</motion.li>
-            ))}
-          </motion.ul>
+          <h1>Protfolio</h1>
           
         </div>
       </div>
