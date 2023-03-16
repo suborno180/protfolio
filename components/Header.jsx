@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import MobileNav from './MobileNav'
+import SocileMediaLinks from '../components/SocileMediaLinks'
 import { motion } from 'framer-motion'
 
 const Header = () => {
@@ -43,7 +44,7 @@ const Header = () => {
   ]
   return (
     <>
-      <header className='bg-pink-200 flex fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] items-center'>
+      <header className='flex fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] items-center'>
         <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between' >
           <Link href={'/'} className="text-[25px] font-semibold" >Logo</Link>
           <nav>
@@ -56,6 +57,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
+        <SocileMediaLinks/>
         <MobileNav />
       </header>
     </>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { CgMenuRight } from 'react-icons/cg'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { easeInOut, motion } from 'framer-motion'
 
 const MobileNav = () => {
 

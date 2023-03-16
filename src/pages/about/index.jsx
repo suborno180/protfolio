@@ -14,14 +14,8 @@ const About = () => {
       </Head>
       <Header />
       {/* Slider Part */}
-      <div className="slider h-96 bg-slate-600">
-        <motion.div
-          animate={{ x: 100 }}
-          initial={{ x: 0 }}
-          transition={{ duration: 1 }
-          }>
-          This is my animated element.
-        </motion.div>
+      <div className="slider h-96 bg-purple-600">
+       
         <div className='container mx-10 pt-[100px]'>
           <h1 className='font-medium' >Protfolio</h1>
         <motion.h1 initial={{x: "100%"}} animate={{x: 0}} transition={{duration: 1}}>About Page</motion.h1>
