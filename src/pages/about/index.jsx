@@ -16,7 +16,7 @@ const About = () => {
           animate={{ x: 100 }}
           initial={{ x: 0 }}
           transition={{ duration: 1 }
-          }>{ }
+          }>
           This is my animated element.
         </motion.div>
         <div className='container mx-96'>
