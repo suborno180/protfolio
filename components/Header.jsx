@@ -35,7 +35,7 @@ const Header = () => {
               initial="hidden"
               animate="visible"
               className='hidden lg:flex uppercase'>
-              {List.map(e => <motion.li key={e} variants={item} className='px-3 hover:text-black'><Link href={'/'} >{e}</Link></motion.li>)}
+              {List.map(e => <motion.li key={e} variants={item} className='px-3 hover:text-black'><Link href={`/${e}`} >{e}</Link></motion.li>)}
             </motion.ul>
           </nav>
         </div>
