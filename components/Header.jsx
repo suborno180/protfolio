@@ -23,7 +23,24 @@ const Header = () => {
       opacity: 1
     }
   };
-  const List = ['home', 'about', 'contact', 'survices']
+  const List = [
+    {
+      name: "home",
+      loc: "/"
+    },
+    {
+      name: "about",
+      loc: "/about"
+    },
+    {
+      name: "contact",
+      loc: "/contact"
+    },
+    {
+      name: "survices",
+      loc: "/survices"
+    },
+  ]
   return (
     <>
       <header className='bg-pink-200 flex fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] items-center'>
@@ -35,7 +52,7 @@ const Header = () => {
               initial="hidden"
               animate="visible"
               className='hidden lg:flex uppercase'>
-              {List.map(e => <motion.li key={e} variants={item} className='px-3 hover:text-black'><Link href={`/${e}`} >{e}</Link></motion.li>)}
+              {List.map(e => <motion.li key={e} variants={item} className='px-3 hover:text-black'><Link href={`/${e.loc}`} >{e.name}</Link></motion.li>)}
             </motion.ul>
           </nav>
         </div>
