@@ -57,7 +57,7 @@ const MobileNav = () => {
                     variants={container}
                     initial="hidden"
                     animate={openMenu ? "visible" : ""}
-                    className='flex flex-col justify-center items-center h-screen uppercase text-2xl font-bold text-[#5f5f5f]'>
+                    className='flex flex-col justify-center items-center h-screen uppercase text-2xl font-bold text-[#272727]'>
                         {List.map(e=><motion.li key={e} variants={item} className='py-3 hover:text-black'><Link href={`/${e.loc}`} >{e.name}</Link></motion.li>)}
                     </motion.ul>
                 </motion.div>

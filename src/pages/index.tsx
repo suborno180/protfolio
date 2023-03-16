@@ -53,17 +53,15 @@ export default function Home() {
       </Head>
       <Header />
       {/* Slider Part */}
-      <div className="slider h-96 bg-slate-600">
-        <motion.div
-          animate={{ x: 100 }}
-          initial={{ x: 0 }}
-          transition={{ duration: 1 }
-          }>
-          This is my animated element.
-        </motion.div>
-        <div className='container mx-96'>
-          <h1 className='font-medium' >Protfolio</h1>
-          
+      <div className="section">
+        <div className="container mx-auto">
+          <div className="flex flex-col justify-center">
+            <div className="w-full pt-36 pb-14 lg:w-auto z-10 flex felx-col justify-center items-center lg:items-start">
+              <h1 className='text-[35px]'>
+                Web Designer <br /> & Developer
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </>
