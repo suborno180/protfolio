@@ -47,13 +47,13 @@ const Header = () => {
         <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between' >
           <Link href={'/'} className="text-[25px] font-semibold" >Logo</Link>
           <nav>
-            <motion.ul
+            <ul
               variants={container}
               initial="hidden"
               animate="visible"
               className='hidden lg:flex uppercase'>
-              {List.map(e => <motion.li key={e} variants={item} className='px-3 hover:text-black'><Link href={`/${e.loc}`} >{e.name}</Link></motion.li>)}
-            </motion.ul>
+              {List.map(e => <li key={e} variants={item} className='px-3 hover:text-black'><Link href={`/${e.loc}`} >{e.name}</Link></li>)}
+            </ul>
           </nav>
         </div>
         <MobileNav />
