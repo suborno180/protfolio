@@ -1,25 +1,21 @@
 import React from 'react'
+import Link from 'next/link'
+import MobileNav from './MobileNav'
 
 const Header = () => {
   return (
     <>
-      <div className='h-16 bg-purple-600'></div>
-      <div className='bg-white h-11 shadow-lg'>
-        {/* Header Part */}
-        <div className='container mx-auto ml:mx-4'>
-          <div className="py-1 font-thin text-[#000] float-left text-2xl cursor-pointer">
-            LOGO
-          </div>
-          <nav>
-            <ul className='flex float-right text-[#6d6c6c] transition-all'>
-              <li className='cursor-pointer hover:text-[#000] px-3 py-2 font-bold'>Home</li>
-              <li className='cursor-pointer hover:text-[#000] px-3 py-2'>About</li>
-              <li className='cursor-pointer hover:text-[#000] px-3 py-2'>Contact</li>
-              <li className='cursor-pointer hover:text-[#000] px-3 py-2'>Survices</li>
-            </ul>
+      <header className='bg-pink-200 flex fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] items-center'>
+        <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between' >
+          <Link href={'/'} className="text-[25px] font-semibold" >Logo</Link>
+          <nav className='hidden lg:flex'>
+              <Link className='hover:text-black px-5 text-[#222222] hover:text-primary transition' href={'/'}>Home</Link>
+              <Link className='hover:text-black px-5 text-[#696c6d] hover:text-primary transition' href={'/about'}>About</Link>
+              <Link className='hover:text-black px-5 text-[#696c6d] hover:text-primary transition' href={'/contsct'}>contact</Link>
           </nav>
         </div>
-      </div>
+          <MobileNav/>
+      </header>
     </>
   )
 }

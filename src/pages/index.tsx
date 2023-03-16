@@ -62,7 +62,7 @@ export default function Home() {
           This is my animated element.
         </motion.div>
         <div className='container mx-96'>
-          <h1>Protfolio</h1>
+          <h1 className='font-medium' >Protfolio</h1>
           
         </div>
       </div>
