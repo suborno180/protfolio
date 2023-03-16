@@ -57,20 +57,17 @@ export default function Home() {
       <div className="section">
         <div className="container mx-auto">
           <div className="flex flex-col justify-center">
-            <motion.div 
-            variants={motionEffect}
-            initial="hidden"
-            animate="visible"
-            className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start lg:top-[35%]">
-              <motion.h1 
-              variants={item}
-              className='text-[35px] block lg:text-[50px]'>
+            <motion.div
+              variants={motionEffect}
+              initial="hidden"
+              animate="visible"
+              className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start lg:top-[35%]">
+              <motion.h1
+                className='text-[35px] block lg:text-[50px]'>
                 Web Designer <br /> & Developer
               </motion.h1>
-              <motion.p variants={item} className='text-[20px] my-2 lg:text-[20px]'>Rajshahi, Bangladesh</motion.p>
-             <motion.span variants={item} className="py-3">
-             <Link href={'/'} className='py-2 px-4 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link>
-             </motion.span>
+              <p className='text-[20px] my-2 lg:text-[20px]'>Rajshahi, Bangladesh</p>
+              <Link href={'/'} className='py-2 px-4 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link>
             </motion.div>
           </div>
         </div>
