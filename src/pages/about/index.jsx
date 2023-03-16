@@ -22,12 +22,11 @@ const About = () => {
           }>
           This is my animated element.
         </motion.div>
-        <div className='container mx-96'>
+        <div className='container mx-10 pt-[100px]'>
           <h1 className='font-medium' >Protfolio</h1>
-          
+        <motion.h1 initial={{x: "100%"}} animate={{x: 0}} transition={{duration: 1}}>About Page</motion.h1>
         </div>
       </div>
-      <h1>About Page</h1>
     </>
   )
 }
