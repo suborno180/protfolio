@@ -11,7 +11,7 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const motionEffect = {
+  const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
       opacity: 1,
@@ -21,17 +21,14 @@ export default function Home() {
         staggerChildren: 0.2
       }
     }
-  }
-  const subitem = {
+  };
+  const item = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1
-    },
-    type: "spring",
-    stiffness: 800,
-    damping: 30,
-  }
+    }
+  };
 
 
   const firebase = getFirestore(app)
@@ -44,6 +41,7 @@ export default function Home() {
   const writeData = async () => {
     addDoc(collection(firebase, 'strafs'), mainData)
   }
+  const num = [0,1,2,3,4]
   return (
     <>
       <Head>
@@ -58,13 +56,15 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-col justify-center">
             <motion.div
+            variants={container}
+            initial="hidden"
+            animate="visible"
               className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start lg:top-[35%]">
-              <motion.h1
-                className='text-[35px] block lg:text-[50px]'>
+              <motion.h1 variants={item} className='text-[35px] block lg:text-[50px]'>
                 Web Designer <br /> & Developer
               </motion.h1>
-              <p className='text-[20px] my-2 lg:text-[20px]'>Rajshahi, Bangladesh</p>
-              <Link href={'/'} className='py-2 px-4 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link>
+              <motion.p variants={item}  className='text-[20px] my-2 lg:text-[20px]'>Rajshahi, Bangladesh</motion.p>
+              <motion.span variants={item} className="py-5" ><Link href={'/'} className='py-2 px-4 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link></motion.span>
             </motion.div>
           </div>
         </div>
