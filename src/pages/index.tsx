@@ -22,7 +22,7 @@ export default function Home() {
       }
     }
   }
-  const item = {
+  const subitem = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
@@ -58,9 +58,6 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-col justify-center">
             <motion.div
-              variants={motionEffect}
-              initial="hidden"
-              animate="visible"
               className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start lg:top-[35%]">
               <motion.h1
                 className='text-[35px] block lg:text-[50px]'>
