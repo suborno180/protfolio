@@ -45,7 +45,7 @@ const About = () => {
               animate="visible"
               className="w-full pt-36 pb-14 lg:py-[1000px] lg:pb-0 lg:w-auto z-10 flex lg:absolute flex-col justify-center items-center lg:items-start">
               <motion.h1 variants={item} className='text-[45px] block lg:text-[100px] font-bold'>
-                About
+                Maruf
               </motion.h1>
               <motion.p variants={item} className='text-[26px] my-0 lg:text-[36px]'>Rajshahi, Bangladesh</motion.p>
               <motion.span variants={item} className="py-5 lg:my-4" ><Link href={'/'} className='py-3 px-7 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link></motion.span>

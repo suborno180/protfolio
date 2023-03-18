@@ -46,14 +46,15 @@ const Header = () => {
     <>
       <header className='flex fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] items-center'>
         <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between' >
-          <Link href={'/'} className="text-[25px] font-semibold" >Logo</Link>
+          <Link href={'/'} className="text-[25px] font-semibold flex items-center" >
+            <img src="/logo.svg" alt="logo" className='h-10 mr-1' /></Link>
           <nav>
             <ul
               variants={container}
               initial="hidden"
               animate="visible"
               className='hidden lg:flex uppercase'>
-              {List.map(e => <li key={e} variants={item} className='px-3 hover:text-black'><Link href={`/${e.loc}`} >{e.name}</Link></li>)}
+              {List.map(e => <li key={e.id} variants={item} className='px-3 hover:text-black'><Link href={`/${e.loc}`} >{e.name}</Link></li>)}
             </ul>
           </nav>
         </div>
