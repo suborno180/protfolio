@@ -49,7 +49,7 @@ const MobileNav = () => {
                 <button className="text-3xl cursor-pointer" onClick={()=>setOpenMenu(true)} ><CgMenuRight /></button>
                 <motion.div 
                 variants={container}
-                initial={{x: "100%"}}
+                initial={{x: "120%"}}
                 animate={openMenu ? {x: 0} : ""}
                 className='bg-white shadow-2xl absolute top-0 right-0 w-full max-w-xs h-screen' >
                     <button className='text-3xl mx-4 my-5' onClick={()=>setOpenMenu(false)}><IoMdClose /></button>
