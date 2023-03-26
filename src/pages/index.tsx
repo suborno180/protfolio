@@ -6,6 +6,8 @@ import { getFirestore, addDoc, collection } from 'firebase/firestore'
 import { app } from '../../components/firebase'
 import { useState } from 'react';
 import Iframe from 'react-iframe';
+import { HiArrowRight } from "react-icons/hi";
+import Clients from '../../components/Clients '
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -57,12 +59,14 @@ export default function Home() {
             <div className='pt-32  flex flex-col justify-center items-center lg:items-start lg:w-[60%]'>
               <motion.h1 variants={item} className='text-[45px] font-bold lg:text-[80px]'>Web Designer <br /> & Developer</motion.h1>
               <motion.p variants={item}  className='text-[25px] my-5'>Rajshahi, Bangladesh</motion.p>
-              <motion.span variants={item} className="py-5 lg:my-4" ><Link href={'/'} className='py-3 px-7 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link></motion.span>
+              {/* <motion.span variants={item} className="py-5 lg:my-4" ><Link href={'/'} className='py-3 px-7 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link></motion.span> */}
+          <motion.span variants={item} className="py-5 lg:my-4 flex items-center text-[18px] font-bold" ><HiArrowRight /><Link href={'/'} className="ml-2" >View all reviews</Link> </motion.span>
             </div>
             <div className='w-[100%] lg:h-screen mt-10 lg:my-0 flex justify-center lg:justify-end'>
               <div className='w-[100%] h-96 lg:h-screen bg-purple-500'></div>
             </div>
           </motion.div>
+          
         </div>
       </div>
       <div className="section">
@@ -77,6 +81,9 @@ export default function Home() {
           </div>
           </div>
         </div>
+      </div>
+      <div className="section">
+        <Clients />
       </div>
     </>
   )

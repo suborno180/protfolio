@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Header from '../../../components/Header'
 import Link from 'next/link'
+import Clients from '../../../components/Clients '
 
 const Survices = () => {
   const container = {
@@ -55,6 +56,7 @@ const Survices = () => {
           </div>
         </div>
       </div>
+      
     </>
   )
 }
