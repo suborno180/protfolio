@@ -8,8 +8,14 @@ const Clients = () => {
             <div className="container m-auto">
                 <div className='relative p-5 lg:py-16 lg:flex lg:justify-between lg:h-screen lg:overflow-y-auto scrollbar-hide'>
                     <div className='lg:relative'>
-                        <h1 className='text-3xl font-bold lg:text-7xl'>What our clints say</h1>
-                        <div className=' lg:sticky lg:top-0 flex items-center font-bold my-3 text-[20px]'><HiArrowRight /><Link href={'/'} className="ml-2 cursor-pointer" >View all reviews</Link> </div>
+                        <div className="textPart mb-14 lg:sticky lg:top-0">
+                            {/* <h1 className='text-3xl font-bold lg:text-7xl'>What our clints say</h1> */}
+                            <div className='p-5'>
+                                <span className='text-6xl font-bold text-gray-300 lg:text-8xl'>What our clints say</span>
+                                <h2 className='text-3xl -mt-6 lg:-mt-10 text-black lg:text-5xl'>What our clints say</h2>
+                            </div>
+                            <div className='flex items-center font-bold my-3 text-[20px]'><HiArrowRight /><Link href={'/'} className="ml-2" >View all reviews</Link> </div>
+                        </div>
                     </div>
                     <div className="commentSec lg:w-[90%]">
                         <div className='card text-center lg:text-left my-5 lg:flex'>
