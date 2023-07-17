@@ -1,9 +1,10 @@
-import React from 'react'
-import Head from 'next/head'
-import { motion } from 'framer-motion'
-import Header from '../../../components/Header'
-import Link from 'next/link'
-import Clients from '../../../components/Clients '
+import React from "react";
+import Head from "next/head";
+import { motion } from "framer-motion";
+import Header from "../../../components/Header";
+import Link from "next/link";
+import Clients from "../../../components/Clients ";
+import Image from "next/image";
 
 const Survices = () => {
   const container = {
@@ -13,20 +14,19 @@ const Survices = () => {
       scale: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
   const item = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
-      opacity: 1
-    }
+      opacity: 1,
+    },
   };
 
-
-  const num = [0, 1, 2, 3, 4]
+  const num = [0, 1, 2, 3, 4];
   return (
     <>
       <Head>
@@ -38,27 +38,69 @@ const Survices = () => {
       {/* Slider Part */}
       <div className="section">
         <div className="container mx-auto">
-          <div className="flex flex-col justify-center">
-            <motion.div
-              variants={container}
-              initial="hidden"
-              animate="visible"
-              className="w-full pt-36 pb-14 lg:py-[1000px] lg:pb-0 lg:w-auto z-10 flex lg:absolute flex-col justify-center items-center lg:items-start">
-              <motion.h1 variants={item} className='text-[45px] block lg:text-[100px] font-bold'>
-                Our Survices
-              </motion.h1>
-              <motion.p variants={item} className='text-[26px] my-0 lg:text-[36px]'>Rajshahi, Bangladesh</motion.p>
-              <motion.span variants={item} className="py-5 lg:my-4" ><Link href={'/'} className='py-3 px-7 bg-black text-white my-4 hover:bg-transparent hover:text-black hover:border-x-2 hover:border-black transition' >Hire me</Link></motion.span>
-            </motion.div>
-          </div>
-          <div className='flex justify-end max-h-96 lg:max-h-max'>
-            <div className='relative lg:-right-40 bg-blue-500 overflow-hidden'></div>
+          <div className="md:h-[100vh] flex flex-col items-center justify-center">
+            <div className="md:flex w-full">
+              <div className="w-full  md:h-full flex flex-col justify-center py-24 mt-10 px-5 md:px-0">
+                <motion.h1
+                  initial={{ translateX: -250 }}
+                  transition={{ duration: 0.5 }}
+                  whileInView={{ translateX: 0 }}
+                  className="text-6xl md:text-7xl font-bold"
+                >
+                  Hy! Am <br />{" "}
+                  <span className="text-orange-500">Maruf Subonro</span>
+                </motion.h1>
+                <motion.p
+                  initial={{ translateX: -250 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  whileInView={{ translateX: 0 }}
+                  className="w-[80%] my-5"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                  labore quia incidunt! Molestiae nam tempora maiores.
+                  Distinctio earum iusto aspernatur!
+                </motion.p>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  whileInView={{ scale: 1 }}
+                >
+                  <Link
+                    href={"/contact"}
+                    className="btn bg-gradient-to-r from-amber-500 to-amber-400 shadow-lg shadow-yellow-500/80 hover:scale-105 transition-all cursor-pointer p-2 px-6 rounded-full text-white"
+                  >
+                    Hire me
+                  </Link>
+                </motion.div>
+              </div>
+              <div className="relative w-full md:h-full pt-10 px-5 md:px-0">
+              <motion.div
+                  initial={{ scale: 0.8 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  whileInView={{ scale: 1 }}
+                  >
+                  <Image src="/hero-image.png" alt="hero image" width={700} height={700} />
+                  </motion.div>
+                  <motion.div 
+                  initial={{ translateX: 250 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  whileInView={{ translateX: 0 }}
+                  className="absolute -top-[5%] md:top-[20%] right-0">
+                  <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-lg">
+                    <div className="w-10 h-10 grid place-content-center rounded-full bg-pink-200">UI</div>
+                    <div className="flex flex-col items-start ml-5">
+                      <strong>UI/UX</strong>
+                      <p className="w-[250px]">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                  </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
     </>
-  )
-}
+  );
+};
 
-export default Survices
+export default Survices;
