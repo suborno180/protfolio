@@ -33,7 +33,7 @@ export default function Home() {
   const firebase = getFirestore(app);
   const [mainData, setMainData] = useState({
     irst_name: "maruf",
-    last_name: "Subonro",
+    last_name: "Subonro2",
     age: 19,
   });
 
