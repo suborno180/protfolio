@@ -100,7 +100,11 @@ export default function Home() {
                   >
                   <Image src="/hero-image.png" alt="hero image" width={700} height={700} />
                   </motion.div>
-                  <div className="absolute -top-[5%] md:top-[20%] right-0">
+                  <motion.div 
+                  initial={{ translateX: 250 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  whileInView={{ translateX: 0 }}
+                  className="absolute -top-[5%] md:top-[20%] right-0">
                   <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-lg">
                     <div className="w-10 h-10 grid place-content-center rounded-full bg-pink-200">UI</div>
                     <div className="flex flex-col items-start ml-5">
@@ -108,7 +112,7 @@ export default function Home() {
                       <p className="w-[250px]">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                   </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
