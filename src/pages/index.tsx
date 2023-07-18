@@ -144,9 +144,7 @@ export default function Home() {
                         </div>
                         <div className="flex flex-col items-start ml-5">
                           <strong>Best Design</strong>
-                          <p className="w-[200px]">
-                            Awardr
-                          </p>
+                          <p className="w-[200px]">Awardr</p>
                         </div>
                       </div>
                     </motion.div>
