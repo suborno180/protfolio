@@ -67,8 +67,8 @@ export default function Home() {
                       whileInView={{ translateX: 0 }}
                       className="text-6xl md:text-7xl font-bold"
                     >
-                      Hy! Am <br />{" "}
-                      <span className="text-orange-500">Maruf Subonro</span>
+                      Hy! {`I'm`} <br />{" "}
+                      <span className="text-orange-500">Maruf Suborno</span>
                     </motion.h1>
                     <motion.p
                       initial={{ translateX: -250 }}
@@ -104,22 +104,48 @@ export default function Home() {
                         alt="hero image"
                         width={700}
                         height={700}
+                        className="h-full"
+                      />
+                      <Image
+                        src="/3d-rendering-smile-emoji-side-view-3d-emoji-icon-png.webp"
+                        alt="hero image"
+                        width={90}
+                        height={90}
+                        className="absolute top-10"
                       />
                     </motion.div>
                     <motion.div
                       initial={{ translateX: 250 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
                       whileInView={{ translateX: 0 }}
-                      className="absolute -top-[5%] md:top-[20%] right-0"
+                      className="absolute -top-[5%] md:-top-[2%] md:-right-10 lg:top-[0%] xl:top-[10%] right-0"
                     >
-                      <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-lg">
+                      <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-xl">
                         <div className="w-10 h-10 grid place-content-center rounded-full bg-pink-200">
                           UI
                         </div>
                         <div className="flex flex-col items-start ml-5">
                           <strong>UI/UX</strong>
-                          <p className="w-[250px]">
-                            Lorem ipsum dolor sit amet consectetur.
+                          <p className="w-[200px]">
+                            Lorem ipsum dolor sit amet
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                    <motion.div
+                      initial={{ translateX: -250 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      whileInView={{ translateX: 0 }}
+                      className="absolute -bottom-[0%] md:-bottom-[2%] md:-left-16 lg:bottom-[0%] xl:bottom-[10%] left-0"
+                    >
+                      <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-xl">
+                        <div className="w-10 h-10 grid place-content-center rounded-full bg-pink-200">
+                          UI
+                        </div>
+                        <div className="flex flex-col items-start ml-5">
+                          <strong>Best Design</strong>
+                          <p className="w-[200px]">
+                            Awardr
                           </p>
                         </div>
                       </div>
