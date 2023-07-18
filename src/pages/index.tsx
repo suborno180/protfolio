@@ -126,7 +126,7 @@ export default function Home() {
                         initial={{ scale: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         whileInView={{ scale: 1 }}
-                        className="absolute -bottom-10 right-20"
+                        className="absolute bottom-10 md:-bottom-10 right-0 md:right-20"
                       >
                         <Image
                           src="/star.png"
@@ -140,7 +140,7 @@ export default function Home() {
                       initial={{ translateX: 250 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
                       whileInView={{ translateX: 0 }}
-                      className="absolute -top-[5%] md:-top-[2%] md:-right-10 lg:top-[0%] xl:top-[20%] right-0"
+                      className="absolute -top-[10%] md:-top-[2%] md:-right-10 lg:top-[0%] xl:top-[20%] right-0"
                     >
                       <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-xl">
                         <div className="w-16 h-16 grid place-content-center rounded-full bg-pink-200">
