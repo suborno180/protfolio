@@ -96,3 +96,35 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@media (max-width: 1760px) {
+  .cSCard_1{
+    transform: translate(0px, -100px) !important;
+  }
+}
+@media (max-width: 1600px) {
+  .cSCard_1{
+    transform: translate(50px, -100px) !important;
+  }
+}
+@media (max-width: 1480px) {
+  .cSCard_1{
+    transform: translate(0px, -100px) !important;
+  }
+}
+@media (max-width: 1330px) {
+  .cSCard_1{
+    transform: translate(-80px, -100px) !important;
+  }
+}
+@media (max-width: 2000px) {
+  .cSCard_1{
+    transform: translate(-150px, -100px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cSCard_1{
+    transform: translate(0px, 0px) !important;
+  }
+}

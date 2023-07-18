@@ -224,27 +224,27 @@ export default function Home() {
                   </Link>
                 </motion.div>
               </div>
-              <div className="w-full flex flex-col md:flex-row items-center justify-center pb-10">
-                <div className="my-5 md:mx-5 md:-translate-x-40 md:-translate-y-20 xl:translate-x-10 ">
+              <div className="w-full flex flex-col md:flex-row items-center justify-center pb-10 ">
+                <div className="my-5 md:mx-5 md:-translate-x-40 md:-translate-y-20 xl:translate-x-40 cSCard_1 ">
                   <Card
                     img={
-                      "/3d-rendering-smile-emoji-side-view-3d-emoji-icon-png.webp"
+                      "/badge-6470076-5431315.webp"
                     }
-                    title={"Design"}
+                    title={"Developer"}
                   />
                 </div>
                 <div className="my-5 md:mx-5 md:absolute -bottom-10 right-[10%]">
-                  <Card
+                <Card
                     img={
-                      "/3d-rendering-smile-emoji-side-view-3d-emoji-icon-png.webp"
+                      "/analytics-chart-5152760-4312549.webp"
                     }
-                    title={"Design"}
+                    title={"Analytics"}
                   />
                 </div>
                 <div className="my-5 lg:mx-5 md:absolute top-10 right-[10%]">
                   <Card
                     img={
-                      "/3d-rendering-smile-emoji-side-view-3d-emoji-icon-png.webp"
+                      "/3d-icon-trophy-with-gold-badge-free-png.webp"
                     }
                     title={"Design"}
                   />
