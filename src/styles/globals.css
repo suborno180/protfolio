@@ -119,12 +119,32 @@ a {
 }
 @media (max-width: 2000px) {
   .cSCard_1{
-    transform: translate(-150px, -100px) !important;
+    transform: translate(118px, -100px) !important;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1650px) {
+  .cSCard_1{
+    transform: translate(50px, -100px) !important;
+  }
+}
+@media (max-width: 1470px) {
+  .cSCard_1{
+    transform: translate(0px, -100px) !important;
+  }
+}
+@media (max-width: 1350px) {
+  .cSCard_1{
+    transform: translate(-50px, -100px) !important;
+  }
+}
+@media (max-width: 1180px) {
+  .cSCard_1{
+    transform: translate(-100px, -100px) !important;
+  }
+}
+@media (max-width: 1024px) {
   .cSCard_1{
     transform: translate(0px, 0px) !important;
   }
 }
+

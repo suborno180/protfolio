@@ -224,8 +224,8 @@ export default function Home() {
                   </Link>
                 </motion.div>
               </div>
-              <div className="w-full flex flex-col md:flex-row items-center justify-center pb-10 ">
-                <div className="my-5 md:mx-5 md:-translate-x-40 md:-translate-y-20 xl:translate-x-40 cSCard_1 ">
+              <div className="w-full flex flex-col lg:flex-row items-center justify-center pb-10 ">
+                <div className="my-5 lg:mx-5  cSCard_1 ">
                   <Card
                     img={
                       "/badge-6470076-5431315.webp"
@@ -233,7 +233,7 @@ export default function Home() {
                     title={"Developer"}
                   />
                 </div>
-                <div className="my-5 md:mx-5 md:absolute -bottom-10 right-[10%]">
+                <div className="my-5 md:mx-5 lg:absolute -bottom-10 right-[10%]">
                 <Card
                     img={
                       "/analytics-chart-5152760-4312549.webp"
@@ -241,7 +241,7 @@ export default function Home() {
                     title={"Analytics"}
                   />
                 </div>
-                <div className="my-5 lg:mx-5 md:absolute top-10 right-[10%]">
+                <div className="my-5 lg:mx-5 lg:absolute top-10 right-[10%]">
                   <Card
                     img={
                       "/3d-icon-trophy-with-gold-badge-free-png.webp"
