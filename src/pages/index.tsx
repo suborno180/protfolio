@@ -103,7 +103,7 @@ export default function Home() {
                         src="/hero-image.png"
                         alt="hero image"
                         width={700}
-                        height={700}
+                        height={800}
                         className="h-full"
                       />
                       <Image
