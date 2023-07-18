@@ -99,30 +99,52 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: 0.4 }}
                       whileInView={{ scale: 1 }}
                     >
+                      {/* hero image */}
                       <Image
                         src="/hero-image.png"
                         alt="hero image"
                         width={700}
-                        height={800}
+                        height={1000}
                         className="h-full"
                       />
-                      <Image
-                        src="/3d-rendering-smile-emoji-side-view-3d-emoji-icon-png.webp"
-                        alt="hero image"
-                        width={90}
-                        height={90}
+                      {/* emoje */}
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        whileInView={{ scale: 1 }}
                         className="absolute top-10"
-                      />
+                      >
+                        <Image
+                          src="/3d-rendering-smile-emoji-side-view-3d-emoji-icon-png.webp"
+                          alt="hero image"
+                          width={90}
+                          height={90}
+                        />
+                      </motion.div>
+                      {/* emoje */}
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        whileInView={{ scale: 1 }}
+                        className="absolute -bottom-10 right-20"
+                      >
+                        <Image
+                          src="/star.png"
+                          alt="hero image"
+                          width={100}
+                          height={100}
+                        />
+                      </motion.div>
                     </motion.div>
                     <motion.div
                       initial={{ translateX: 250 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
                       whileInView={{ translateX: 0 }}
-                      className="absolute -top-[5%] md:-top-[2%] md:-right-10 lg:top-[0%] xl:top-[10%] right-0"
+                      className="absolute -top-[5%] md:-top-[2%] md:-right-10 lg:top-[0%] xl:top-[20%] right-0"
                     >
                       <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-xl">
-                        <div className="w-10 h-10 grid place-content-center rounded-full bg-pink-200">
-                          UI
+                        <div className="w-16 h-16 grid place-content-center rounded-full bg-pink-200">
+                          <Image src="/3d-icon-trophy-with-gold-badge-free-png.webp" alt="ui" width={40} height={40} />
                         </div>
                         <div className="flex flex-col items-start ml-5">
                           <strong>UI/UX</strong>
@@ -139,8 +161,8 @@ export default function Home() {
                       className="absolute -bottom-[0%] md:-bottom-[2%] md:-left-16 lg:bottom-[0%] xl:bottom-[10%] left-0"
                     >
                       <div className="card flex items-center bg-white shadow-xl scale-75 hover:scale-100 transition-all cursor-pointer p-5 rounded-xl">
-                        <div className="w-10 h-10 grid place-content-center rounded-full bg-pink-200">
-                          UI
+                      <div className="w-16 h-16 grid place-content-center rounded-full bg-pink-200">
+                          <Image src="/badge-6470076-5431315.webp" alt="badge" width={40} height={40} />
                         </div>
                         <div className="flex flex-col items-start ml-5">
                           <strong>Best Design</strong>
